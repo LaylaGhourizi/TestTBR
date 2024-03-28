@@ -1,0 +1,38 @@
+body {
+  background-color: #ffc0cb; /* Pink background color */
+}
+
+h1 {
+  color: #ff1493; /* Deep pink text color */
+  text-align: center;
+}
+
+#bookList {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#bookList div {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Glitter effect */
+@keyframes glitter {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#bookList div:hover {
+  animation: glitter 1s ease infinite;
+}
